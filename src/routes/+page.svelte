@@ -50,12 +50,14 @@
 	
 
 	.footer_container  {
-		width: 50%;
+		width: 30%;
 		margin: auto;
 		background-color: black;
 		padding: 10px;
-		box-shadow: 8px 9px 10px #d9d9d9;
+		box-shadow: 1px 2px 10px #525252;
 		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	@media (max-width: 600px) {
@@ -74,6 +76,14 @@
 		border-radius: 5px;
 		border: none;
 		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 13px;
+		text-align: center;
 	}
 	
 	.footer_container button:nth-child(1)  {
