@@ -1,13 +1,53 @@
 <header>
+
+    <div
+    class="modal fade"
+    id="token-prompt"
+    tabindex="-1"
+    aria-labelledby="token-prompt-label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="token-prompt-label">
+            Dolby.io Dashboard
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <label for="input-token" class="form-label"
+            >Demo Client Access Token:</label
+          >
+          <input id="input-token" type="text" class="form-control" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btn-token" class="btn btn-primary">
+            Authenticate
+          </button>
+        </div>
+      </div>
+    </div>
+  <!-- </div>
 <div class="form">
-    <input placeholder="Dolby Secret Token" type="text">
-    <button>Authenticate</button>
-</div>
+    <input placeholder="Dolby Secret Token" type="text" id="input-token">
+    <button id="btn-token">Authenticate</button>
+</div> -->
 
 <div class="status_section">
     <button>Inactive</button>
     <div class="round"></div>
+    
 </div>
+<div>
+    <p id="message"></p>
+</div>
+
 </header>
 
 <style>
