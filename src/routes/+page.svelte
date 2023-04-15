@@ -103,6 +103,8 @@
         videoNode.autoplay = true;
         videoNode.playsinline = true;
 
+        console.log(videoNode);
+
         const videoContainer = document.getElementById(perspective);
         videoContainer.lastElementChild.replaceWith(videoNode);
         videoContainer.firstElementChild.innerText = participant.info.name;
@@ -201,11 +203,12 @@
 <br />
 <div class="footer_container">
   <button id="btn-join">Join</button>
-  <button id="btn-invite">Leave</button>
-  <button id="btn-leave">Invite</button>
+  <button id="btn-leave">Leave</button>
+  <button id="btn-invite">Invite</button>
 </div>
 
 <style>
+
   .video_container {
     width: 80%;
     height: 60vh;
@@ -277,4 +280,7 @@
   .footer_container button:nth-child(3) {
     background-color: gray;
   }
+
+
+
 </style>
